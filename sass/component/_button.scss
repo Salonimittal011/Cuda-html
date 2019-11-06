@@ -1,0 +1,72 @@
+.banner {
+  .button {
+    background-color: $orange;
+    color: $white;
+    padding: 28px 80px;
+    text-decoration: none;
+    border: none;
+    border-bottom: 5px solid $dark-orange;
+    border-radius: 5px;
+    font-size: $b-fontsize;
+    transition: all 2s ease-in-out;
+
+    &:hover {
+      background-color: $dark-orange;
+      cursor: pointer;
+    }
+  }
+
+  @media only screen and (max-width:992px) {
+    .button {
+      padding: 20px 70px;
+    }
+  }
+
+  @media only screen and (max-width:767px) {
+    .button {
+      padding: 20px 80px;
+      font-size: 10px;
+      border-bottom: 3px solid $dark-orange;
+    }
+  }
+}
+
+.contact-form {
+  .button {
+    cursor: pointer;
+    background-color: $sky-blue;
+    border: none;
+    padding: 20px;
+    margin-top: 59px;
+    margin-bottom: 115px;
+    border-bottom: 5px solid $sea-blue;
+    border-radius: 5px;
+    color: $white;
+    padding: 28px 80px;
+    font-size: $b-fontsize;
+    transition: all 2s ease-in-out;
+
+    &:hover {
+      background-color: $sea-blue;
+      cursor: pointer;
+        }
+  }
+
+  @media only screen and (max-width:992px) {
+    .button {
+      margin-top: 50px;
+      margin-bottom: 50px;
+
+    }
+  }
+
+  @media only screen and (max-width:767px) {
+    .button {
+      padding: 20px 68px;
+      font-size: 10px;
+      border-bottom: 3px solid $sea-blue;
+      margin-top: 30px;
+      margin-bottom: 60px;
+    }
+  }
+}

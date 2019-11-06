@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    &::before,
+    &::after {
+        display: table;
+        content: '';
+    }
+
+    &::after {
+        clear: both;
+    }
+}
+
+.header-outer {
+    padding: 47px 0;
+    background-color: $purple;
+}
+
+.banner-outer {
+    background-color: $purple;
+}
+
+.content-outer {
+    background-color: $gray;
+}
+
+.form-outer {
+    background-color: $light-blue;
+}
+
+.footer-outer {
+    background-color: $dark-blue;
+}

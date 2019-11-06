@@ -1,0 +1,122 @@
+.footer {
+    padding: 0 10px;
+
+    .links {
+        padding: 0 30px;
+
+        ul {
+            list-style: none;
+            padding: 30px 18px;
+
+            li {
+                display: inline-block;
+                font-size: $f-fontsize;
+                padding-right: 30px;
+
+                &:last-child {
+                    padding-right: 0px;
+                }
+
+                a {
+                    color: $white;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $sky-blue;
+
+                    }
+                }
+            }
+        }
+
+        .fa-facebook-f {
+
+            padding: 4px 5px;
+            margin-right: 2px;
+        }
+
+        .fa-twitter {
+            padding: 4px 5px;
+            margin-right: 2px;
+        }
+
+        .fa-google-plus {
+
+            padding: 4px 5px;
+            margin-right: 2px;
+        }
+
+        .fa-linkedin {
+
+            padding: 4px 5px;
+            margin-right: 2px;
+        }
+
+        .fa-behance {
+
+            padding: 4px 5px;
+            margin-right: 2px;
+        }
+
+        .fa-dribbble {
+
+            padding: 4px 5px;
+            margin-right: 2px;
+        }
+
+        .fa-github {
+            padding: 4px 5px;
+            margin-right: 2px;
+        }
+    }
+
+    @media only screen and (max-width:992px) {
+        .links {
+            ul {
+                padding: 20px 78px;
+
+                li {
+                    padding-bottom: 18px;
+                    display: block;
+                    text-align: center;
+
+                    &:not(:last-child) {
+                        padding-right: 0px;
+                    }
+
+                    a {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and(max-width:767px) {
+        .links {
+
+            ul {
+                text-align: center;
+                padding: 10px 10px;
+
+                li {
+                    padding: 10px;
+                    display: inline-block;
+
+                    &:not(:last-child):after {
+                        content: '|';
+                        color: $white;
+                    }
+
+                    a {
+                        font-size: 16px;
+                    }
+
+                    &:not(:last-child) {
+                        padding-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+}

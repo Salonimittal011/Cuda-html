@@ -1,0 +1,36 @@
+.banner {
+    width: 100%;
+    color: $white;
+    font-size: $p-fontsize;
+    padding-top: 103px;
+    text-align: center;
+    padding-bottom: 145px;
+
+    p {
+        padding-bottom: 63px;
+        font-size: $p-fontsize;
+    }
+
+    @media only screen and (max-width: 992px) {
+        padding-top: 40px;
+        padding-bottom: 50px;
+
+        p {
+            font-size: 28px;
+            padding-bottom: 40px;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 80px;
+        text-align: center;
+
+        p {
+            padding: 0 28px;
+
+        }
+    }
+
+}

@@ -1,0 +1,209 @@
+.header {
+    padding: 0px 10px;
+
+    .logo {
+        float: left;
+        width: 200px;
+    }
+
+    @media screen and (max-width: 992px) {
+        height: auto;
+        margin: 0px 10px;
+
+    }
+
+    @media screen and (max-width: 768px) {
+        height: auto;
+        margin: 10px 0px;
+
+    }
+}
+
+nav {
+    float: right;
+
+    ul {
+        list-style: none;
+        margin: 10px 0;
+
+        li {
+            display: inline-block;
+            font-size: $li-fontsize;
+
+            a {
+                color: $white;
+                text-decoration: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                margin-right: 22px;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: $dark-purple;
+
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 992px) {
+        background-color: $purple;
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                padding: 14px;
+                display: inline-block;
+
+
+                a {
+                    color: $white;
+                    font-size: 16px;
+                    padding: 0;
+                    margin-right: 10px;
+                    font-weight: bold;
+
+                    &:hover {
+                        background: none;
+                    }
+
+                }
+            }
+        }
+
+    }
+
+
+    @media only screen and (max-width: 767px) {
+        display: none;
+        background-color: $purple;
+        padding-top: 150px;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        transition: 0.5s;
+
+
+        ul {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+            li {
+
+                display: block;
+                padding: 20px;
+
+                a {
+                    font-weight: bold;
+                    color: $white;
+                    font-size: 30px;
+                    padding: 0;
+
+                    &:hover {
+                        background: none;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.submenu {
+    clear: both;
+    display: inline-block;
+    position: relative;
+
+    .submenu-nav {
+        padding-top: 20px;
+        display: none;
+        min-width: 200px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        overflow: visible;
+        top: 24px;
+
+        .submenu-content {
+            box-shadow: 8px 8px 16px 16px rgba(0, 0, 0, 0.2);
+            background-color: $gray;
+            padding: 0;
+            border-radius: 4px;
+
+            li {
+                display: block;
+                text-align: center;
+
+                transition: transform 0.2s ease-out;
+
+                a {
+                    text-decoration: none;
+                    padding: 8px 0px;
+                    display: block;
+                    font-size: 18px;
+                    color: $black;
+                    margin: 0;
+
+                    &:hover {
+                        background-color: $dark-gray;
+                        color: $dark-orange;
+                    }
+
+
+                }
+            }
+
+        }
+    }
+
+    .fa-caret-up {
+        display: block;
+        font-size: 48px;
+        position: absolute;
+        top: 30px;
+        left: 4px;
+        color: $black;
+        background: none;
+        transform: translate(80px, -30px);
+        color: $gray;
+    }
+
+    &:hover {
+        .submenu-nav {
+            display: block;
+
+        }
+    }
+
+}
+
+
+.sticky-header {
+    position: fixed;
+    background-color: $purple;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1050;
+    height: 60px;
+    padding: 10px 0;
+
+    @media only screen and (max-width: 992px) {
+
+        padding: 0px 0;
+    }
+
+    @media only screen and (max-width: 767px) {
+        padding: 0px 10px
+    }
+
+}
